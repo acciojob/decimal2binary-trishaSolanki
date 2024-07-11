@@ -1,7 +1,11 @@
-function decimalToBinary(num) {
-  //Write you code here
-	 return num.toString(2);
-	decimalToBinary(input)=output_decimalToBinary
-	{
+function decimalToBinary(decimal) {
+    if (decimal < 0) {
+        return 'Negative numbers are not supported.';
+    }
+    return decimal.toString(2);
+}
 
-window.decimalToBinary = decimalToBinary;
+// Test the function
+console.log(decimalToBinary(7));   // Output: 111
+console.log(decimalToBinary(10));  // Output: 1010
+console.log(decimalToBinary(33));  // Output: 100001
